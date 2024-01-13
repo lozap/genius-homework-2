@@ -1,0 +1,192 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/play-v19-cyrillic_latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/play-v19-cyrillic_latin-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v30-cyrillic_latin-regular.woff2') format('woff2');
+}
+
+
+:root{
+  --beauty-landing-2-c1: #011C44;  
+  --beauty-landing-2-c3: #4A4A4A;
+  --beauty-landing-2-2: #2B7FFF;
+  --beauty-landing-2-5: #747272;
+  --beauty-landing-2-background: #FFF;  
+}
+/* Base */
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  color: var(--beauty-landing-2-c1);
+  font-family: 'Roboto', sans-serif;    
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;  
+}
+
+ul{
+  list-style-type: none;
+}
+
+h2{
+  font-family: 'Play', sans-serif;
+  font-size: 64px;  
+  font-weight: 700;
+  line-height: normal;   
+}
+
+/* Link */
+.link{
+  color: var(--beauty-landing-2-c1);
+  text-decoration: none;
+}
+
+.link:hover{
+  color: var(--beauty-landing-2-2);
+  text-decoration: underline;
+  font-weight: 700;
+
+}
+
+.button {
+  padding: 16pt 32pt;
+  color: var(--beauty-landing-2-background);
+  background-color: var(--beauty-landing-2-2);
+  border: 2px solid var(--beauty-landing-2-2);
+  border-radius: 32px;
+  font-size: 18px;
+  font-weight: 600;  
+  cursor: pointer;
+}
+
+/* Header section */
+
+.logo{
+  width: 74px;
+  color: var(--beauty-landing-2-2);
+  font-family: 'Play', sans-serif;
+  font-size: 22px;  
+  font-weight: 700;
+  line-height: 21px;   
+  text-transform: capitalize;  
+  padding: 32px;
+  text-decoration: none;
+}
+
+.accent{
+  color: var(--beauty-landing-2-2); 
+}
+
+/* Hero section */
+
+.hero-title{
+  color: var(--beauty-landing-2-2);
+  font-family: 'Play', sans-serif;
+  font-size: 140px;
+  font-weight: 700;
+  line-height: 114px;
+  margin-top: 16px;
+  margin-bottom: 40px;
+}
+
+.hero-subscribe{
+  font-size: 12px;
+}
+
+/* About section */
+.about-section p{
+  font-size: 22px;
+}
+
+.about-title .accent{
+  color: var(--beauty-landing-2-2); 
+  text-transform: capitalize;
+}
+
+.about-section p .accent{
+  color: var(--beauty-landing-2-c3);
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+/* Adventages section */
+
+.adventages-section p{
+  line-height: 24px;
+}
+
+/* Procedure section */
+
+.procedures-section p{
+  font-size: 22px;
+  line-height: 26px;
+}
+
+/* Contact section */
+.subscribe-block{
+  width: 423px;
+  display: inline-block;
+  margin-left: 32px;
+  vertical-align: top;
+  color: var(--beauty-landing-2-background);
+  background-color: var(--beauty-landing-2-c1);  
+}
+
+.policy{
+  font-size: 12px;
+  color: var(--beauty-landing-2-5);
+}
+
+.policy a{
+  color: var(--beauty-landing-2-5);
+}
+
+/* Footer section */
+
+.footer-section{
+  background-color: var(--beauty-landing-2-c1);
+  font-size: 16px;
+  line-height: normal;
+
+}
+
+.footer-link{
+  color: var(--beauty-landing-2-background);
+  text-decoration: none;  
+}
+
+.footer-link:hover{
+  color: var(--beauty-landing-2-2);
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.footer-img{
+  align-items: end;
+}
+
+.footer-section .address-copyright{
+  color: var(--beauty-landing-2-5);
+  font-size: 13px;
+}
