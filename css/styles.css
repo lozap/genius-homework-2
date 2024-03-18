@@ -15,7 +15,7 @@
 }
 
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -23,49 +23,57 @@
 }
 
 
-:root{
-  --beauty-landing-2-c1: #011C44;  
+:root {
+  --beauty-landing-2-c1: #011C44;
   --beauty-landing-2-c3: #4A4A4A;
   --beauty-landing-2-2: #2B7FFF;
   --beauty-landing-2-5: #747272;
-  --beauty-landing-2-background: #FFF;  
+  --beauty-landing-2-background: #FFF;
 }
+
 /* Base */
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-body{
-  margin: 0;
+body {
   color: var(--beauty-landing-2-c1);
-  font-family: 'Roboto', sans-serif;    
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: normal;  
+  line-height: normal;
 }
 
-ul{
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+ul {
   list-style-type: none;
 }
 
-h2{
+h2 {
   font-family: 'Play', sans-serif;
-  font-size: 64px;  
+  font-size: 64px;
   font-weight: 700;
-  line-height: normal;   
+  line-height: normal;
 }
 
-/* Link */
-.link{
+.link {
   color: var(--beauty-landing-2-c1);
   text-decoration: none;
 }
 
-.link:hover{
+.link:hover {
   color: var(--beauty-landing-2-2);
   text-decoration: underline;
   font-weight: 700;
+  text-decoration: none;
 
 }
 
@@ -76,31 +84,109 @@ h2{
   border: 2px solid var(--beauty-landing-2-2);
   border-radius: 32px;
   font-size: 18px;
-  font-weight: 600;  
+  font-weight: 600;
   cursor: pointer;
 }
 
+/* Background TOP*/
+
+
+.background-top {
+  display: flexbox;
+  align-items: right;
+  width: 1440px;
+}
+
+.background-top-image {
+  position: absolute;
+  width: 100%;
+  height: 600px;
+  max-width: 1440px;
+  background: url(../images/procerure-view.jpg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+  z-index: 1;
+
+}
+
+.background-top-gradient {
+  position: absolute;
+  width: 100%;
+  height: 600px;
+  max-width: 1440px;
+  background-image: linear-gradient(90deg, white 15%, transparent);
+  z-index: 1;
+}
+
+
 /* Header section */
 
-.logo{
+.header-container {
+  display: flex;
+  height: 110px;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  width: 100%;
+  height: 42px;
+  align-items: center;
+  gap: 100px;
+  z-index: 2;
+}
+
+.logo {
   width: 74px;
   color: var(--beauty-landing-2-2);
   font-family: 'Play', sans-serif;
-  font-size: 22px;  
+  font-size: 22px;
   font-weight: 700;
-  line-height: 21px;   
-  text-transform: capitalize;  
-  padding: 32px;
+  line-height: 21px;
+  text-transform: capitalize;
   text-decoration: none;
 }
 
-.accent{
-  color: var(--beauty-landing-2-2); 
+.header-menu {
+  display: flex;
+  align-items: flex-start;
+  gap: 56px;
+}
+
+.header-icons {
+  display: flex;
+  width: 160px;
+  gap: 32px;
+}
+
+.header_icon {
+  fill: var(--beauty-landing-2-c1);
+}
+
+.header_icon:hover {
+  fill: var(--beauty-landing-2-2);
+}
+
+.accent {
+  color: var(--beauty-landing-2-2);
 }
 
 /* Hero section */
 
-.hero-title{
+.hero-section {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-title-box {
+  margin-left: 240px;
+  margin-top: 16px;
+  max-width: 530px;
+
+}
+
+.hero-title {
   color: var(--beauty-landing-2-2);
   font-family: 'Play', sans-serif;
   font-size: 140px;
@@ -110,83 +196,152 @@ h2{
   margin-bottom: 40px;
 }
 
-.hero-subscribe{
+.hero-button-box {
+  max-width: 250px;
+  text-align: center;
+}
+
+.hero-subscribe {
   font-size: 12px;
+  padding-top: 16px;
 }
 
 /* About section */
-.about-section p{
+
+.about-container {
+  display: flex;
+}
+
+.about-section {
+  position: relative;
+  z-index: 2;
+  margin-top: 128px;
+}
+
+.about-section p {
   font-size: 22px;
 }
 
-.about-title .accent{
-  color: var(--beauty-landing-2-2); 
+.about-title {
+  width: 529px;
+}
+
+.about-title .accent {
+  color: var(--beauty-landing-2-2);
   text-transform: capitalize;
 }
 
-.about-section p .accent{
+.about-section p .accent {
   color: var(--beauty-landing-2-c3);
   text-transform: capitalize;
   font-weight: 600;
 }
 
+.about-subsection-1 {
+  /* display: inline-flex; */
+
+}
+
+.star-medium {
+  fill: var(--beauty-landing-2-2);
+}
+
+.star-small {
+  fill: var(--beauty-landing-2-5)
+}
+
+.star-big {
+  fill: var(--beauty-landing-2-c1)
+}
+
 /* Adventages section */
 
-.adventages-section p{
+.adventages-section p {
   line-height: 24px;
+}
+
+.adventages_icon {
+  fill: var(--beauty-landing-2-2);
 }
 
 /* Procedure section */
 
-.procedures-section p{
+.procedures-section p {
   font-size: 22px;
   line-height: 26px;
 }
 
+.carousel-button {
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+  align-self: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--beauty-landing-2-c1);
+}
+
+.carousel-button.right {
+  transform: rotate(180deg);
+}
+
 /* Contact section */
-.subscribe-block{
+.subscribe-block {
   width: 423px;
   display: inline-block;
   margin-left: 32px;
   vertical-align: top;
   color: var(--beauty-landing-2-background);
-  background-color: var(--beauty-landing-2-c1);  
+  background-color: var(--beauty-landing-2-c1);
 }
 
-.policy{
+.policy {
   font-size: 12px;
   color: var(--beauty-landing-2-5);
 }
 
-.policy a{
+.policy a {
   color: var(--beauty-landing-2-5);
 }
 
 /* Footer section */
 
-.footer-section{
+.footer-section {
   background-color: var(--beauty-landing-2-c1);
   font-size: 16px;
   line-height: normal;
 
 }
 
-.footer-link{
+.footer-link {
   color: var(--beauty-landing-2-background);
-  text-decoration: none;  
+  text-decoration: none;
 }
 
-.footer-link:hover{
+.footer-link:hover {
   color: var(--beauty-landing-2-2);
   text-decoration: underline;
   font-weight: 700;
+  text-decoration: none;
 }
 
-.footer-img{
+.footer-icon {
+  fill: var(--beauty-landing-2-background);
+}
+
+.footer-icon:hover {
+  fill: var(--beauty-landing-2-2);
+}
+
+.footer-img {
   align-items: end;
 }
 
-.footer-section .address-copyright{
+.footer-section .address-copyright {
   color: var(--beauty-landing-2-5);
   font-size: 13px;
 }
