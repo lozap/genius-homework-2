@@ -48,9 +48,11 @@ body {
 }
 
 .container {
+  display: flex;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 16px;  
+  justify-content: center;
 }
 
 ul {
@@ -214,15 +216,13 @@ h2 {
 .about-container {
   display: flex;
   width: 1240px;
-  height: 695px;
-  align-items: center;
+  height: 695px;  
 }
 
 .about-section {
   position: relative;
   z-index: 2;
   margin-top: 128px;
-  top: 0;
 }
 
 .about-section p {
