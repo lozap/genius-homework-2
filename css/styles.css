@@ -216,7 +216,6 @@ h2 {
 }
 
 .hero-title-box {
-  z-index: 3;
   margin-left: 240px;
   margin-top: 16px;
   max-width: 530px;
@@ -249,7 +248,7 @@ h2 {
   position: relative;
   justify-content: center;
   width: 100%;
-  height: 660px;
+  height: 700px;
 }
 
 .about-block {
@@ -335,6 +334,8 @@ h2 {
 
 .adventages-section {
   display: flex;
+  position: relative;
+  top: 0px;
   justify-content: center;
   width: 100%;
 }
@@ -376,9 +377,14 @@ h2 {
   height: 180px;
   padding: 24px 32px 24px 32px;
   border-radius: 32px;
+  justify-content: center;
+  text-align: center;
+
 }
 
 .adventages_icon {
+  display: flexbox;
+  position: relative;
   fill: var(--beauty-landing-2-2);
 }
 
@@ -386,7 +392,8 @@ h2 {
 
 .procedures-section {
   display: flex;
-  display: flex;
+  position: relative;
+  top: 40px;
   justify-content: center;
   width: 100%;
 }
@@ -452,6 +459,8 @@ h2 {
 
 .contacts-section {
   display: flex;
+  position: relative;
+  top: 60px;
   justify-content: center;
   width: 100%;
 }
@@ -504,18 +513,24 @@ h2 {
 
 .footer-section {
   display: flex;
+  position: relative;
+  top: 60px;
   justify-content: center;
   width: 100%;
   background-color: var(--beauty-landing-2-c1);
   font-size: 16px;
   line-height: normal;
+  background-image: url(../images/pexels-photo.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
 }
 
 .footer-container {
   display: flex;
   gap: 190px;
   justify-content: space-between;
-  padding: 50px;
+  z-index: 1;
+  padding: 50px 100px 100px 100px;
 }
 
 .footer-logo {
@@ -524,8 +539,8 @@ h2 {
 
 .footer-link {
   display: flex;
-  color: var(--beauty-landing-2-background);
   text-decoration: none;
+  color: var(--beauty-landing-2-background);
 }
 
 .footer-link:hover {
