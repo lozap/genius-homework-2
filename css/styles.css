@@ -130,9 +130,11 @@ h2 {
 
 .background-top-vector {
   position: absolute;
+  top: 20px;
   width: 100%;
   height: 800px;
   background: url(../images/vect.svg);
+  z-index: 5;
 }
 
 /* Header section */
@@ -330,12 +332,31 @@ h2 {
   left: 130px;
 }
 
+/* Background central section */
+.background-section {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  top: 1450px;
+}
+
+.background-center {
+  position: absolute;
+  display: flex;
+  max-width: 1440px;
+  width: 100%;
+  height: 700px;
+  background-image: url(../images/background.svg);
+  top: -50px;
+}
+
 /* Adventages section */
 
 .adventages-section {
   display: flex;
   position: relative;
-  top: 0px;
+  top: 100px;
   justify-content: center;
   width: 100%;
 }
@@ -379,6 +400,7 @@ h2 {
   border-radius: 32px;
   justify-content: center;
   text-align: center;
+  background-color: var(--beauty-landing-2-background);
 
 }
 
@@ -391,9 +413,9 @@ h2 {
 /* Procedure section */
 
 .procedures-section {
-  display: flex;
   position: relative;
-  top: 40px;
+  display: flex;
+  top: 150px;
   justify-content: center;
   width: 100%;
 }
@@ -405,16 +427,17 @@ h2 {
 
 .procedures-container {
   display: flex;
-  position: relative;
+  /* position: relative; */
   flex-direction: column;
   justify-content: center;
   top: 0px;
-  max-width: 1060px;
   height: 680px;
+  /* max-width: 1060px; */
   width: 100%;
 }
 
 .procedures-title {
+  /* display: flexbox; */
   text-align: center;
   padding-bottom: 30px;
 }
@@ -422,8 +445,9 @@ h2 {
 .procedures-block {
   position: relative;
   display: flex;
-  gap: 30px;
-  left: -85px;
+  justify-content: center;
+  gap: 20px;
+  top: 0px;
 }
 
 .carousel-button {
@@ -434,7 +458,7 @@ h2 {
   align-items: center;
   width: 44px;
   height: 44px;
-  padding: 0;
+  padding: o;
   background-color: transparent;
   border-radius: 50%;
   border: 1px solid var(--beauty-landing-2-c1);
@@ -444,9 +468,17 @@ h2 {
   transform: rotate(180deg);
 }
 
+.carousel-button:hover {
+  background-color: var(--beauty-landing-2-2);
+  fill: var(--beauty-landing-2-background);
+  border: 1px solid var(---beauty-landing-2-background);
+}
+
 .procedure-card {
+  display: flex;
   width: 340px;
   height: 450px;
+  justify-content: center;
 }
 
 .procedure-card-img {
@@ -455,12 +487,55 @@ h2 {
   border-radius: 4px 120px 4px 120px;
 }
 
+.procedure-card-gradient {
+  position: absolute;
+  top: 0;
+  width: 340px;
+  height: 450px;
+  border-radius: 4px 120px 4px 120px;
+  background: linear-gradient(180.05deg, rgba(1, 28, 68, 0) 48.53%, rgba(1, 28, 68, 0.725825) 84.61%, #011C44 101.39%);
+}
+
+.procedure-text {
+  position: absolute;
+  width: 152px;
+  height: 52px;
+  text-align: center;
+  bottom: 32px;
+  color: var(--beauty-landing-2-background);
+  font-size: 22px;
+}
+
+.carousel-dot-box {
+  position: relative;
+  display: flex;
+  width: 121pxpx;
+  height: 11pxpx;
+  gap: 24px;
+  justify-content: center;
+  padding-top: 16px;
+}
+
+.carousel-dot {
+  display: flex;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  fill: var(--beauty-landing-2-c1);
+}
+
+.carousel-dot:hover {
+  cursor: pointer;
+  fill: var(--beauty-landing-2-2);
+}
+
+
 /* Contact section */
 
 .contacts-section {
   display: flex;
   position: relative;
-  top: 60px;
+  top: 200px;
   justify-content: center;
   width: 100%;
 }
@@ -514,12 +589,12 @@ h2 {
 .footer-section {
   display: flex;
   position: relative;
-  top: 60px;
+  top: 200px;
   justify-content: center;
   width: 100%;
   background-color: var(--beauty-landing-2-c1);
   font-size: 16px;
-  line-height: normal;
+  line-height: 18px;
   background-image: url(../images/pexels-photo.png);
   background-repeat: no-repeat;
   background-position: bottom right;
@@ -527,8 +602,8 @@ h2 {
 
 .footer-container {
   display: flex;
-  gap: 190px;
-  justify-content: space-between;
+  gap: 90px;
+  justify-content: space-evenly;
   z-index: 1;
   padding: 50px 100px 100px 100px;
 }
@@ -541,6 +616,7 @@ h2 {
   display: flex;
   text-decoration: none;
   color: var(--beauty-landing-2-background);
+  padding-bottom: 16px;
 }
 
 .footer-link:hover {
@@ -571,9 +647,4 @@ h2 {
 .footer-section .address-copyright {
   color: var(--beauty-landing-2-5);
   font-size: 13px;
-}
-
-/* Background section */
-.background-section {
-  display: flex;
 }
