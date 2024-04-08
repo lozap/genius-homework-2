@@ -529,6 +529,13 @@ h2 {
   fill: var(--beauty-landing-2-2);
 }
 
+.carousel-dot-active {
+  display: flex;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  fill: var(--beauty-landing-2-2);
+}
 
 /* Contact section */
 
@@ -575,6 +582,14 @@ h2 {
   border-radius: 32px;
 }
 
+.contacts-map {
+  flex-shrink: 0;
+  width: 605px;
+  height: 480px;
+  border-radius: 32px;
+  border: 0;
+}
+
 .policy {
   font-size: 12px;
   color: var(--beauty-landing-2-5);
@@ -595,17 +610,18 @@ h2 {
   background-color: var(--beauty-landing-2-c1);
   font-size: 16px;
   line-height: 18px;
-  background-image: url(../images/pexels-photo.png);
-  background-repeat: no-repeat;
-  background-position: bottom right;
 }
 
 .footer-container {
   display: flex;
-  gap: 90px;
-  justify-content: space-evenly;
+  gap: 40px;
+  justify-content: space-between;
   z-index: 1;
-  padding: 50px 100px 100px 100px;
+  padding: 60px 100px 60px 100px;
+  width: 100%;
+  background-image: url(../images/pexels-photo.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
 }
 
 .footer-logo {
@@ -647,4 +663,19 @@ h2 {
 .footer-section .address-copyright {
   color: var(--beauty-landing-2-5);
   font-size: 13px;
+}
+
+.footer-menu {
+  width: 203px;
+  height: 124px;
+}
+
+.footer-contacts {
+  width: 192px;
+  height: 166px;
+}
+
+.footer-policy {
+  width: 203px;
+  height: 50px;
 }
